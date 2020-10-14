@@ -9,3 +9,7 @@ SELECT `name`, `lastname` FROM `ospiti` WHERE `date_of_birth` > "1988-01-01"
 3)Seleziona tutti gli ospiti che hanno più di 20 anni (al momento dell’esecuzione della query)
 
 SELECT `name`, `lastname` FROM `ospiti` WHERE `date_of_birth` < "2000-10-13"
+
+4)Seleziona tutti gli ospiti il cui nome inizia con la D
+
+SELECT `name`, `lastname` FROM `ospiti` WHERE `name` LIKE 'D%'
