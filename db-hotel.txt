@@ -13,3 +13,8 @@ SELECT `name`, `lastname` FROM `ospiti` WHERE `date_of_birth` < "2000-10-13"
 4)Seleziona tutti gli ospiti il cui nome inizia con la D
 
 SELECT `name`, `lastname` FROM `ospiti` WHERE `name` LIKE 'D%'
+
+5)Calcola il totale degli ordini accepted
+
+SELECT COUNT(id) FROM `pagamenti` WHERE `status` = "accepted"
+
