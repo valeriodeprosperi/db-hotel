@@ -18,3 +18,8 @@ SELECT `name`, `lastname` FROM `ospiti` WHERE `name` LIKE 'D%'
 
 SELECT COUNT(id) FROM `pagamenti` WHERE `status` = "accepted"
 
+6)Qual è il prezzo massimo pagato?
+
+SELECT MAX(price) AS LargestPrice FROM `pagamenti`
+
+
