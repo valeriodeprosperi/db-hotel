@@ -1,0 +1,7 @@
+Section Group By:
+
+1) Conta gli ospiti raggruppandoli per anno di nascita
+
+SELECT YEAR(`date_of_birth`) AS BirthDate, COUNT(id) AS YearCount 
+FROM `ospiti` 
+GROUP BY YEAR(`date_of_birth`);
