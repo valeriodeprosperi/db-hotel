@@ -5,3 +5,15 @@ Section Group By:
 SELECT YEAR(`date_of_birth`) AS BirthDate, COUNT(id) AS YearCount 
 FROM `ospiti` 
 GROUP BY YEAR(`date_of_birth`);
+
+2) Somma i prezzi dei pagamenti raggruppandoli per status
+
+SELECT SUM(`price`) AS SUM, `status` AS STATUS 
+FROM `pagamenti` 
+GROUP BY `status`;
+
+3) Conta quante volte è stata prenotata ogni stanza
+
+SELECT COUNT(`stanza_id`) AS ID, `stanza_id` AS STANZA 
+FROM `prenotazioni` 
+GROUP BY `stanza_id`;
